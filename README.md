@@ -33,7 +33,12 @@ There has been a lot of code reused, but this card has effectively been rewritte
 
 # Installation
 
-This plugin is now part of the default HACS store. Install card from HACS (note that it requires HACS 1.26.0 or greater) the same way you do for other plugins. After installing the card you can add as many instances of the card the the dashboard as you desire. Due to the complexities of the card (icons/split code for performance) it is not recommended you do a manual install (also you don't get automatic updates offered, please use HACS!).
+This plugin is a custom HACS plugin. 
+First at all you need to add a custom repository like [this](https://hacs.xyz/docs/faq/custom_repositories/).
+
+Then install card from HACS (note that it requires HACS 1.26.0 or greater) int the same way you do for other plugins. 
+
+After installing the card you can add as many instances of the card the the dashboard as you desire. Due to the complexities of the card (icons/split code for performance) it is not recommended you do a manual install (also you don't get automatic updates offered, please use HACS!).
 
 # Getting Started
 
