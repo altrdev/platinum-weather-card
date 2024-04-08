@@ -1,5 +1,15 @@
 import { LovelaceCard, LovelaceCardConfig, LovelaceCardEditor, ActionConfig } from 'custom-card-helpers';
 
+//tjl add support for hass.formatEntityState as custom-card-helpers does not include it.
+//  https://developers.home-assistant.io/docs/frontend/data/#entity-state-formatting
+//  https://github.com/home-assistant/frontend/blob/dev/src/types.ts
+import type { HomeAssistant } from 'custom-card-helpers';
+import { HassEntity } from "home-assistant-js-websocket";
+export interface HassFormatEntityState extends HomeAssistant {
+  formatEntityState(stateObj: HassEntity, state?: string): string;
+}
+
+
 declare global {
   interface HTMLElementTagNameMap {
     'platinum-weather-card-editor': LovelaceCardEditor;
@@ -125,6 +135,12 @@ export interface WeatherCardConfig extends LovelaceCardConfig {
   option_tooltips?: boolean;
   old_daily_format?: boolean;
   option_show_beaufort?: boolean;
+
+  //tjl added.  This is where the subscribe entity/events go to
+  weather_entity: string;
+
+ //tjl used in code but missing here, so added
+  tempformat?: string;
 
   entity?: string;
   tap_action?: ActionConfig;
