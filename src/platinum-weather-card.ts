@@ -2619,7 +2619,7 @@ export class PlatinumWeatherCard extends LitElement {
   get localeTextGust(): string {
     switch (this.locale) {
       case 'it': return "Raffica";
-      case 'fr': return "Rafale";
+      case 'fr': return "Raf";
       case 'de': return "Böen";
       case 'nl': return "Windvlaag";
       case 'pl': return "Poryw";
