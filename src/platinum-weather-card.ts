@@ -2900,6 +2900,7 @@ export class PlatinumWeatherCard extends LitElement {
         width: 100%;
         margin: 0;
         clear: both;
+        overflow: hidden;
       }
       .daily-forecast-horiz-section .day-horiz:nth-last-child(1) {
         border-right: transparent;
