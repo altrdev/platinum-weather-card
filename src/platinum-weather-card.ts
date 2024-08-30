@@ -2447,6 +2447,7 @@ export class PlatinumWeatherCard extends LitElement {
   get localeTextFeelsLike(): string {
     switch (this.locale) {
       case 'it': return "Percepito";
+      case 'es': return "Percibido";
       case 'fr': return "Ressenti";
       case 'de': return "Gefühlt";
       case 'nl': return "Voelt als";
@@ -2463,6 +2464,7 @@ export class PlatinumWeatherCard extends LitElement {
   get localeTextObservedMax(): string {
     switch (this.locale) {
       case 'it': return "Osservata Max";
+      case 'es': return "Max observado";
       case 'fr': return "Observé Max";
       case 'de': return "Beobachtet Max";
       case 'nl': return "Opgemerkt Max";
@@ -2479,6 +2481,7 @@ export class PlatinumWeatherCard extends LitElement {
   get localeTextObservedMin(): string {
     switch (this.locale) {
       case 'it': return "Osservata Min";
+      case 'es': return "Mín observado";
       case 'fr': return "Observé Min";
       case 'de': return "Beobachtet Min";
       case 'nl': return "Opgemerkt Min";
@@ -2507,6 +2510,7 @@ export class PlatinumWeatherCard extends LitElement {
   get localeTextForecastMax(): string {
     switch (this.locale) {
       case 'it': return "Max oggi";
+      case 'es': return "Max hoy";
       case 'fr': return "Max aujourd'hui";
       case 'de': return "Max heute";
       case 'nl': return "Max vandaag";
@@ -2523,6 +2527,7 @@ export class PlatinumWeatherCard extends LitElement {
   get localeTextForecastMin(): string {
     switch (this.locale) {
       case 'it': return "Min oggi";
+      case 'es': return "Mín hoy";
       case 'fr': return "Min aujourd'hui";
       case 'de': return "Min heute";
       case 'nl': return "Min vandaag";
@@ -2539,6 +2544,7 @@ export class PlatinumWeatherCard extends LitElement {
   get localeTextPosToday(): string {
     switch (this.locale) {
       case 'it': return "Previsione";
+      case 'es': return "Pronóstico";
       case 'fr': return "Prévoir";
       case 'de': return "Vorhersage";
       case 'nl': return "Prognose";
@@ -2555,6 +2561,7 @@ export class PlatinumWeatherCard extends LitElement {
   get localeTextPosTomorrow(): string {
     switch (this.locale) {
       case 'it': return "Prev per domani";
+      case 'es': return "Pron para mañana";
       case 'fr': return "Prév demain";
       case 'de': return "Prog morgen";
       case 'nl': return "Prog morgen";
@@ -2571,6 +2578,7 @@ export class PlatinumWeatherCard extends LitElement {
   get localeTextFore(): string {
     switch (this.locale) {
       case 'it': return "Prev";
+      case 'es': return "Pron";
       case 'fr': return "Prév";
       case 'de': return "Prog";
       case 'nl': return "Prog";
@@ -2587,6 +2595,7 @@ export class PlatinumWeatherCard extends LitElement {
   get localeTextUVRating(): string {
     switch (this.locale) {
       case 'it': return "UV";
+      case 'es': return "UV";
       case 'fr': return "UV";
       case 'de': return "UV";
       case 'nl': return "UV";
@@ -2603,6 +2612,7 @@ export class PlatinumWeatherCard extends LitElement {
   get localeTextFireDanger(): string {
     switch (this.locale) {
       case 'it': return "Fuoco";
+      case 'es': return "Fuego";
       case 'fr': return "Feu";
       case 'de': return "Feuer";
       case 'nl': return "Brand";
@@ -2619,6 +2629,7 @@ export class PlatinumWeatherCard extends LitElement {
   get localeTextGust(): string {
     switch (this.locale) {
       case 'it': return "Raffica";
+      case 'es': return "Ráfaga";
       case 'fr': return "Raf";
       case 'de': return "Böen";
       case 'nl': return "Windvlaag";
